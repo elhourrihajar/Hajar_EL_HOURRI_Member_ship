@@ -1,0 +1,17 @@
+
+
+server:
+  port: ${APP_PORT:6969}
+
+    
+management:
+  health:
+    show-details: always
+  metrics:
+    enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+        
+       
